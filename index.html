@@ -27,7 +27,7 @@
                 <!-- Triangle Card -->
                 <div class="card bg-base-100   shadow-xl">
                     <figure>
-                      <img
+                      <img class="w-full h-40 md:mt-4"
                         src="images/triangle.png"
                         alt="Shoes" />
                     </figure>
@@ -45,7 +45,7 @@
                       </div>
 
                       <div class="text-left">
-                            <p class="text-xl">Area: <span id="triangle-area"> </span> <span>cm<sup>2</sup></span> </p>
+                            <p class="text-xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span> </p>
                       </div>
 
                       <div class="card-actions mt-5">
@@ -57,7 +57,7 @@
                 <!-- rectangle Card-->
                 <div class="card bg-base-100  shadow-xl">
                     <figure>
-                      <img class="md:mt-4"
+                      <img class="md:mt-4 w-full h-40"
                         src="images/rectangle.png"
                         alt="Shoes" />
                     </figure>
@@ -65,11 +65,13 @@
                       <h2 class="text-2xl font-bold text-center">Rectangle</h2>
                       <p class="text-xl">Area (A) = W  X I</p>
                       <div class="flex items-center justify-center p-4">
-                        <input type="number" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="W"><span class="mr-4 ml-2">cm</span>
-                        <input type="number" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="I"><span class="mr-4 ml-2">cm</span>
+                        <input type="number" id="rectangle-width" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="W"><span class="mr-4 ml-2">cm</span>
+
+
+                        <input type="number" id="rectangle-length" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="l"><span class="mr-4 ml-2">cm</span>
                       </div>
                       <div class="text-left">
-                        <p class="text-xl">Area: <span id="triangle-area"> </span> <span>cm<sup>2</sup></span> </p>
+                        <p class="text-xl">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span> </p>
                   </div>
                       <div class="card-actions mt-5">
                         <button class="btn btn-primary w-full" onclick="calculateRectangleArea()">Calculate</button>
@@ -77,21 +79,30 @@
                     </div>
                   </div>
 
-
+                <!-- Parallelogram Card -->
                 <div class="card bg-base-100  shadow-xl">
                     <figure>
-                      <img
-                        src="images/"
-                        alt="Shoes" />
+                      <img class="md:mt-4 w-full h-40"
+                        src="images/parallelogram.png"
+                        alt="Shoes"  />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body text-center">
+                      <h2 class="text-2xl font-bold text-center">Parallelogram</h2>
+                      <p class="text-xl">Area (A) = b X h</p>
+                      <div class="flex items-center justify-center p-4">
+                        <input type="number" id="parallelogram-base" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="b"><span class="mr-4 ml-2">cm</span>
+
+
+                        <input type="number" id="parallelogram-height" class="max-w-20 p-3 bg-black bg-opacity-20 shadow-2xl rounded-sm text-2xl placeholder:text-black" placeholder="h"><span class="mr-4 ml-2">cm</span>
+                      </div>
+                      <div class="text-left">
+                        <p class="text-xl">Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span> </p>
+                  </div>
+                      <div class="card-actions mt-5">
+                        <button class="btn btn-primary w-full" onclick="calculateParallelogram()">Calculate</button>
                       </div>
                     </div>
-                </div>
+                  </div>
 
                 <div class="card bg-base-100  shadow-xl">
                     <figure>
@@ -139,5 +150,6 @@
 
     <script src="scripts/traingle-calculate.js"></script>
     <script src="scripts/rectangleArea.js"></script>
+    <script src="scripts/parallelogram.js"></script>
   </body>
 </html>
