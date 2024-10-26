@@ -8,14 +8,13 @@
     STe 5: Convert the value to a number using parseFloat
  */
 
-
-
 /* function calculateTriangleArea(){
     // Get Triangle Base Value
     const triangleBase = document.getElementById('triangle-base');
     const TriangleBaseText= triangleBase.value;
     const base = parseFloat(TriangleBaseText);
 
+    // Get Triangle Height Value
     const TriangleHeight = document.getElementById('triangle-height');
     const TriangleHeightText = TriangleHeight.value;
     const height = parseFloat(TriangleHeightText);
@@ -27,4 +26,14 @@
     const TraingleAreaSpan = document.getElementById('triangle-area');
     TraingleAreaSpan.innerText = area;
 
-} */
+}
+ */
+
+function calculateTriangleArea() {
+  const triangleBase = getInputValueById("triangle-base");
+  console.log(triangleBase);
+  const TriangleHeight = getInputValueById("triangle-height");
+/*  */
+  const area = triangleBase * TriangleHeight;
+  setInnerTextById("triangle-area", area);
+} 

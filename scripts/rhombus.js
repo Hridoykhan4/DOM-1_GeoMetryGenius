@@ -1,26 +1,21 @@
-function calculaterhombus(){
-    const d1 = getInputValueById('rhombus-first-diagonal');
-  
+function calculaterhombus() {
+  const d1 = getInputValueById("rhombus-first-diagonal");
 
-    const d2 = getInputValueById('rhombus-second-diagonal');
+  const d2 = getInputValueById("rhombus-second-diagonal");
 
-    const area = 0.5 * d1 * d2;
+  const area = 0.5 * d1 * d2;
 
-     setInnerTextById('rhombus-area', area);
-
-
-
+  setInnerTextById("rhombus-area", area);
 }
 
-function getInputValueById(inputFieldId){
-    const inputField = document.getElementById(inputFieldId);
-    inputValueText = inputField.value;
-    const inputValue = parseFloat(inputValueText);
-    return inputValue;
+function getInputValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  inputValueText = inputField.value;
+  const inputValue = parseFloat(inputValueText);
+  return inputValue;
 }
 
-
-function setInnerTextById(elementID, area){
-    const element = document.getElementById(elementID);
-    return element.innerText = area;
+function setInnerTextById(elementId, area) {
+  const element = document.getElementById(elementId);
+  return (element.innerText = area);
 }
