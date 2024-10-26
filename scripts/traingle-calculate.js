@@ -3,12 +3,14 @@
 
     Step 1 : Get base value of the triangle
     step 2: Added an id in the base input field
-    Step 3: use getelement byId to access the input fiels
+    Step 3: use getelement byId to access the input field
     Step-4: Get value from the input field by using triangle-base.value
     STe 5: Convert the value to a number using parseFloat
  */
 
-function calculateTriangleArea(){
+
+
+/* function calculateTriangleArea(){
     // Get Triangle Base Value
     const triangleBase = document.getElementById('triangle-base');
     const TriangleBaseText= triangleBase.value;
@@ -25,4 +27,4 @@ function calculateTriangleArea(){
     const TraingleAreaSpan = document.getElementById('triangle-area');
     TraingleAreaSpan.innerText = area;
 
-}
+} */
