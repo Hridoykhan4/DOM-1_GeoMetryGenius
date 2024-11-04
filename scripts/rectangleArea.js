@@ -5,4 +5,7 @@ function calculateRectangleArea() {
   const area = recTangleWidth * rectangleLength;
 
   setInnerTextById("rectangle-area", area);
+
+  setFinalView(area);
+
 }

@@ -6,6 +6,8 @@ function calculaterhombus() {
   const area = 0.5 * d1 * d2;
 
   setInnerTextById("rhombus-area", area);
+
+  setFinalView(area);
 }
 
 function getInputValueById(inputFieldId) {
@@ -18,4 +20,12 @@ function getInputValueById(inputFieldId) {
 function setInnerTextById(elementId, area) {
   const element = document.getElementById(elementId);
   return (element.innerText = area);
+}
+
+
+function setFinalView(value){
+  const areaView  = document.getElementById('area-final-show');
+  const p = document.createElement('p');
+  p.innerText = `The Total area is : ${value}`;
+  areaView.appendChild(p);
 }

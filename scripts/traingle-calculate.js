@@ -31,9 +31,10 @@
 
 function calculateTriangleArea() {
   const triangleBase = getInputValueById("triangle-base");
-  console.log(triangleBase);
   const TriangleHeight = getInputValueById("triangle-height");
 /*  */
   const area = triangleBase * TriangleHeight;
   setInnerTextById("triangle-area", area);
+
+  setFinalView(area);
 } 

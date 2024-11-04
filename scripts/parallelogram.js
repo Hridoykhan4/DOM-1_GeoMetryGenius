@@ -12,4 +12,6 @@ function calculateParallelogram(){
     const parallelogramArea = document.getElementById('parallelogram-area');
     parallelogramArea.innerText = area;
 
+    setFinalView(area);
+
 }

@@ -8,4 +8,6 @@ function calculatePentagon() {
   const area = 0.5 * perimeter * base;
 
   setInnerTextById("pentagon-area", area);
+
+  setFinalView(area);
 }
