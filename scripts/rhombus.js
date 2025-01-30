@@ -12,20 +12,19 @@ function calculaterhombus() {
 
 function getInputValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
-  inputValueText = inputField.value;
+  const inputValueText = inputField.value;
   const inputValue = parseFloat(inputValueText);
   return inputValue;
 }
 
 function setInnerTextById(elementId, area) {
   const element = document.getElementById(elementId);
-  return (element.innerText = area);
+  return element.innerText = area.toFixed(2);
 }
 
-
-function setFinalView(value){
-  const areaView  = document.getElementById('area-final-show');
-  const p = document.createElement('p');
+function setFinalView(value) {
+  const areaView = document.getElementById("area-final-show");
+  const p = document.createElement("p");
   p.innerText = `The Total area is : ${value}`;
   areaView.appendChild(p);
 }

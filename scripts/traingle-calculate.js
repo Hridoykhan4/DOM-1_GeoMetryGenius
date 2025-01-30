@@ -8,6 +8,7 @@
     STe 5: Convert the value to a number using parseFloat
  */
 
+ 
 /* function calculateTriangleArea(){
     // Get Triangle Base Value
     const triangleBase = document.getElementById('triangle-base');
@@ -33,7 +34,7 @@ function calculateTriangleArea() {
   const triangleBase = getInputValueById("triangle-base");
   const TriangleHeight = getInputValueById("triangle-height");
 /*  */
-  const area = triangleBase * TriangleHeight;
+  const area = 0.5 * triangleBase * TriangleHeight;
   setInnerTextById("triangle-area", area);
 
   setFinalView(area);
